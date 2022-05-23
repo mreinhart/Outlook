@@ -84,7 +84,7 @@
             </OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
-        <MobileFormFactor>
+        <!--<MobileFormFactor>
           <FunctionFile resid="residUILessFunctionFileUrl" />
           <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
           
@@ -109,7 +109,7 @@
               </Control>
        
           </ExtensionPoint>
-        </MobileFormFactor>
+        </MobileFormFactor>-->
       </Host>
     </Hosts>
     <Resources>
