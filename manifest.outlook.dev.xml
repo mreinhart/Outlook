@@ -13,7 +13,7 @@
   <HighResolutionIconUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.DominionEnergy.com/help"/>
   <AppDomains>
-    <AppDomain>https://dominionenergyo365-my.sharepoint.com</AppDomain>
+    <AppDomain>https://mreinhart.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
@@ -26,7 +26,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://org701cf010.crm.dynamics.com/WebResources/coe_taskpane.html"/>
+        <SourceLocation DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -114,15 +114,15 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-16.png"/>
-        <bt:Image id="Icon.25x25" DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-25.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-32.png"/>
-        <bt:Image id="Icon.48x48" DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-48.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-16.png"/>
+        <bt:Image id="Icon.25x25" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-25.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-32.png"/>
+        <bt:Image id="Icon.48x48" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-48.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://org701cf010.crm.dynamics.com/WebResources/coe_commands.html" />
-        <bt:Url id="Taskpane.Url" DefaultValue="https://org701cf010.crm.dynamics.com/WebResources/coe_taskpane.html" />
+        <bt:Url id="Commands.Url" DefaultValue="https://mreinhart.github.io/Outlook/commands.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Phishing"/>
