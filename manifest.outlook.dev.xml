@@ -84,24 +84,24 @@
             </OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
-        <!--<MobileFormFactor>
+        <MobileFormFactor>
           <FunctionFile resid="residUILessFunctionFileUrl" />
           <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
           
               <Control xsi:type="MobileButton" id="TaskPaneBtn">
                 <Label resid="residTaskPaneButtonName" />
                 <Icon xsi:type="bt:MobileIconList">
-                  <bt:Image size="25" scale="1" resid="tp0icon" />
-                  <bt:Image size="25" scale="2" resid="tp0icon" />
-                  <bt:Image size="25" scale="3" resid="tp0icon" />
+                  <bt:Image size="25" scale="1" resid="Icon.25x25" />
+                  <bt:Image size="25" scale="2" resid="Icon.25x25" />
+                  <bt:Image size="25" scale="3" resid="Icon.25x25" />
 
                   <bt:Image size="32" scale="1" resid="Icon.32x32" />
                   <bt:Image size="32" scale="2" resid="Icon.32x32" />
                   <bt:Image size="32" scale="3" resid="Icon.32x32" />
 
-                  <bt:Image size="48" scale="1" resid="tp0icon" />
-                  <bt:Image size="48" scale="2" resid="tp0icon" />
-                  <bt:Image size="48" scale="3" resid="tp0icon" />
+                  <bt:Image size="48" scale="1" resid="Icon.48x48" />
+                  <bt:Image size="48" scale="2" resid="Icon.48x48" />
+                  <bt:Image size="48" scale="3" resid="Icon.48x48" />
                 </Icon>
                 <Action xsi:type="ShowTaskpane">
                   <SourceLocation resid="Taskpane.Url" />
@@ -109,7 +109,7 @@
               </Control>
        
           </ExtensionPoint>
-        </MobileFormFactor>-->
+        </MobileFormFactor>
       </Host>
     </Hosts>
     <Resources>
