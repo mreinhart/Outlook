@@ -9,8 +9,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Phishing Decision Tree"/>
   <Description DefaultValue="Phishing Decision Tree."/>
-  <IconUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/PAA/SiteAssets/dist/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.DominionEnergy.com/help"/>
   <AppDomains>
     <AppDomain>https://mreinhart.github.io</AppDomain>
