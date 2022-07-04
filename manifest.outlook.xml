@@ -9,11 +9,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Phishing Decision Tree"/>
   <Description DefaultValue="Phishing Decision Tree."/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <IconUrl DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/DECyberSecurity/SitePages/All-About-Phishing.aspx"/>
   <AppDomains>
-    <AppDomain>https://www.DominionEnergy.com</AppDomain>
+    <AppDomain>https://www.dominionnet.com</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
@@ -26,7 +26,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://www.contoso.com/taskpane.html"/>
+        <SourceLocation DefaultValue="https://outlookaddin-devl.dominionnet.com/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -65,74 +65,90 @@
                     <SourceLocation resid="Taskpane.Url" />
                   </Action>
                 </Control>
-                <!--<Control xsi:type="Button" id="ActionButton">
-                  <Label resid="ActionButton.Label"/>
-                  <Supertip>
-                    <Title resid="ActionButton.Label"/>
-                    <Description resid="ActionButton.Tooltip"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>action</FunctionName>
-                  </Action>
-                </Control>-->
               </Group>
             </OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
-        <!--<MobileFormFactor>
-          <FunctionFile resid="residUILessFunctionFileUrl" />
-          <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
-          
-              <Control xsi:type="MobileButton" id="TaskPaneBtn">
-                <Label resid="residTaskPaneButtonName" />
-                <Icon xsi:type="bt:MobileIconList">
-                  <bt:Image size="25" scale="1" resid="Icon.25x25" />
-                  <bt:Image size="25" scale="2" resid="Icon.25x25" />
-                  <bt:Image size="25" scale="3" resid="Icon.25x25" />
-
-                  <bt:Image size="32" scale="1" resid="Icon.32x32" />
-                  <bt:Image size="32" scale="2" resid="Icon.32x32" />
-                  <bt:Image size="32" scale="3" resid="Icon.32x32" />
-
-                  <bt:Image size="48" scale="1" resid="Icon.48x48" />
-                  <bt:Image size="48" scale="2" resid="Icon.48x48" />
-                  <bt:Image size="48" scale="3" resid="Icon.48x48" />
-                </Icon>
-                <Action xsi:type="ShowTaskpane">
-                  <SourceLocation resid="Taskpane.Url" />
-                </Action>
-              </Control>
        
-          </ExtensionPoint>
-        </MobileFormFactor>-->
       </Host>
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-16.png?v=1"/>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-25.png?v=1"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/icon-32.png?v=1"/>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-48.png?v=1"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/icon-80.png?v=1"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-16.png?v=1"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-32.png?v=1"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-80.png?v=1"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html" />
-        <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html" />
+        <bt:Url id="Commands.Url" DefaultValue="https://outlookaddin-devl.dominionnet.com/commands.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://outlookaddin-devl.dominionnet.com/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Phishing"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Phishing Decision Tree"/>
-        <!--<bt:String id="ActionButton.Label" DefaultValue="TEST"/>-->
+       
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
-        <!--<bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/>-->
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens the Phishing Decision Tree Application."/>
+
       </bt:LongStrings>
     </Resources>
-  </VersionOverrides>
+
+<!--
+	  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+	  <Requirements>
+		  <bt:Sets DefaultMinVersion="1.3">
+			  <bt:Set Name="Mailbox" />
+		  </bt:Sets>
+	  </Requirements>
+	  <Hosts>
+		  <Host xsi:type="MailHost">
+			  <MobileFormFactor>
+				  <FunctionFile resid="Commands.Url.Mobile" />
+				  <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+					  <Group id="msgReadGroupMobile">
+						  <Label resid="GroupLabelMobile" />
+						  <Control xsi:type="MobileButton" id="TaskPaneBtnMobile">
+							  <Label resid="residTaskPaneButtonNameMobile" />
+							  <Icon xsi:type="bt:MobileIconList">
+								  <bt:Image size="25" scale="1" resid="Icon.25x25.Mobile" />
+								  <bt:Image size="25" scale="2" resid="Icon.25x25.Mobile" />
+								  <bt:Image size="25" scale="3" resid="Icon.25x25.Mobile" />
+
+								  <bt:Image size="32" scale="1" resid="Icon.32x32.Mobile" />
+								  <bt:Image size="32" scale="2" resid="Icon.32x32.Mobile" />
+								  <bt:Image size="32" scale="3" resid="Icon.32x32.Mobile" />
+
+								  <bt:Image size="48" scale="1" resid="Icon.48x48.Mobile" />
+								  <bt:Image size="48" scale="2" resid="Icon.48x48.Mobile" />
+								  <bt:Image size="48" scale="3" resid="Icon.48x48.Mobile" />
+							  </Icon>
+							  <Action xsi:type="ShowTaskpane">
+								  <SourceLocation resid="Taskpane.Url.Mobile" />
+							  </Action>
+						  </Control>
+					  </Group>
+				  </ExtensionPoint>
+			  </MobileFormFactor>
+		  </Host>
+	  </Hosts>
+	  <Resources>
+		  <bt:Images>
+
+			  <bt:Image id="Icon.25x25.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-25.png?v=1"/>
+			  <bt:Image id="Icon.32x32.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-32.png?v=1"/>
+			  <bt:Image id="Icon.48x48.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-48.png?v=1"/>
+		  </bt:Images>
+		  <bt:Urls>
+			  <bt:Url id="Commands.Url.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/commands.html" />
+			  <bt:Url id="Taskpane.Url.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/taskpane.html" />
+		  </bt:Urls>
+		  <bt:ShortStrings>
+			  <bt:String id="GroupLabelMobile" DefaultValue="Phishing"/>
+			  
+			  <bt:String id="residTaskPaneButtonNameMobile" DefaultValue="Phishing Decision Tree"/>
+		  </bt:ShortStrings>
+		  
+	  </Resources>
+  </VersionOverrides>-->
+        </VersionOverrides>
 </OfficeApp>

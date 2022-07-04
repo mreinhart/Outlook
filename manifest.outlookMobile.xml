@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
+  <Id>05c2e1c9-3e1d-406e-9a91-e9ac64854143</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Dominion Energy</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Phishing Decision Tree"/>
+  <Description DefaultValue="Phishing Decision Tree."/>
+  <IconUrl DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/DECyberSecurity/SitePages/All-About-Phishing.aspx"/>
+  <AppDomains>
+    <AppDomain>https://www.dominionnet.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://outlookaddin-devl.dominionnet.com/taskpane.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+
+	<VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+
+		<VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+			<Requirements>
+				<bt:Sets DefaultMinVersion="1.3">
+					<bt:Set Name="Mailbox" />
+				</bt:Sets>
+			</Requirements>
+			<Hosts>
+				<Host xsi:type="MailHost">
+					<MobileFormFactor>
+						<FunctionFile resid="Commands.Url.Mobile" />
+						<ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+							<Group id="msgReadGroupMobile">
+								<Label resid="GroupLabelMobile" />
+								<Control xsi:type="MobileButton" id="TaskPaneBtnMobile">
+									<Label resid="residTaskPaneButtonNameMobile" />
+									<Icon xsi:type="bt:MobileIconList">
+										<bt:Image size="25" scale="1" resid="Icon.25x25.Mobile" />
+										<bt:Image size="25" scale="2" resid="Icon.25x25.Mobile" />
+										<bt:Image size="25" scale="3" resid="Icon.25x25.Mobile" />
+
+										<bt:Image size="32" scale="1" resid="Icon.32x32.Mobile" />
+										<bt:Image size="32" scale="2" resid="Icon.32x32.Mobile" />
+										<bt:Image size="32" scale="3" resid="Icon.32x32.Mobile" />
+
+										<bt:Image size="48" scale="1" resid="Icon.48x48.Mobile" />
+										<bt:Image size="48" scale="2" resid="Icon.48x48.Mobile" />
+										<bt:Image size="48" scale="3" resid="Icon.48x48.Mobile" />
+									</Icon>
+									<Action xsi:type="ShowTaskpane">
+										<SourceLocation resid="Taskpane.Url.Mobile" />
+									</Action>
+								</Control>
+							</Group>
+						</ExtensionPoint>
+					</MobileFormFactor>
+				</Host>
+			</Hosts>
+			<Resources>
+				<bt:Images>
+
+					<bt:Image id="Icon.25x25.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-25.png?v=1"/>
+					<bt:Image id="Icon.32x32.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-32.png?v=1"/>
+					<bt:Image id="Icon.48x48.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/assets/icon-48.png?v=1"/>
+				</bt:Images>
+				<bt:Urls>
+					<bt:Url id="Commands.Url.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/commands.html" />
+					<bt:Url id="Taskpane.Url.Mobile" DefaultValue="https://outlookaddin-devl.dominionnet.com/taskpane.html" />
+				</bt:Urls>
+				<bt:ShortStrings>
+					<bt:String id="GroupLabelMobile" DefaultValue="Phishing"/>
+
+					<bt:String id="residTaskPaneButtonNameMobile" DefaultValue="Phishing Decision Tree"/>
+				</bt:ShortStrings>
+
+			</Resources>
+		</VersionOverrides>
+	</VersionOverrides>
+</OfficeApp>
