@@ -12,8 +12,8 @@
 	<DefaultLocale>en-US</DefaultLocale>
 	<DisplayName DefaultValue="Phishing Decision Tree"/>
 	<Description DefaultValue="Phishing Decision Tree."/>
-	<IconUrl DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-64.png"/>
-	<HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-128.png"/>
+	<IconUrl DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-64.png"/>
+	<HighResolutionIconUrl DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-128.png"/>
 	<SupportUrl DefaultValue="https://dominionenergyo365.sharepoint.com/sites/DECyberSecurity/SitePages/All-About-Phishing.aspx"/>
 	<Hosts>
 		<Host Name="Mailbox" />
@@ -27,7 +27,7 @@
 	<FormSettings>
 		<Form xsi:type="ItemRead">
 			<DesktopSettings>
-				<SourceLocation DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/taskpane.html"/>
+				<SourceLocation DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html"/>
 				<RequestedHeight>250</RequestedHeight>
 			</DesktopSettings>
 		</Form>
@@ -85,13 +85,13 @@
 
 		<Resources>
 			<bt:Images>
-				<bt:Image id="Icon.16x16" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-16.png?v=1"/>
-				<bt:Image id="Icon.32x32" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-32.png?v=1"/>
-				<bt:Image id="Icon.80x80" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-80.png?v=1"/>
+				<bt:Image id="Icon.16x16" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-16.png?v=1"/>
+				<bt:Image id="Icon.32x32" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-32.png?v=1"/>
+				<bt:Image id="Icon.80x80" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-80.png?v=1"/>
 			</bt:Images>
 			<bt:Urls>
-				<bt:Url id="Commands.Url" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/commands.html" />
-				<bt:Url id="Taskpane.Url" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/taskpane.html" />
+				<bt:Url id="Commands.Url" DefaultValue="https://mreinhart.github.io/Outlook/commands.html" />
+				<bt:Url id="Taskpane.Url" DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html" />
 			</bt:Urls>
 			<bt:ShortStrings>
 				<bt:String id="GroupLabel" DefaultValue="Phishing"/>
@@ -174,17 +174,17 @@
 			</Hosts>
 			<Resources>
 				<bt:Images>
-					<bt:Image id="Icon.16x16" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-16.png?v=1"/>
-					<bt:Image id="Icon.25x25" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-25.png?v=1"/>
-					<bt:Image id="Icon.32x32" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-32.png?v=1"/>
-					<bt:Image id="Icon.48x48" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-48.png?v=1"/>
-					<bt:Image id="Icon.80x80" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/assets/icon-80.png?v=1"/>
+					<bt:Image id="Icon.16x16" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-16.png?v=1"/>
+					<bt:Image id="Icon.25x25" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-25.png?v=1"/>
+					<bt:Image id="Icon.32x32" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-32.png?v=1"/>
+					<bt:Image id="Icon.48x48" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-48.png?v=1"/>
+					<bt:Image id="Icon.80x80" DefaultValue="https://mreinhart.github.io/Outlook/assets/icon-80.png?v=1"/>
 				</bt:Images>
 				<bt:Urls>
-					<bt:Url id="Commands.Url" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/commands.html" />
-					<bt:Url id="Taskpane.Url" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/taskpane.html" />
-					<bt:Url id="Commands.Url.Mobile" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/commands.html" />
-					<bt:Url id="Taskpane.Url.Mobile" DefaultValue="https://raw.githubusercontent.com/mreinhart/Outlook/main/taskpane.html" />
+					<bt:Url id="Commands.Url" DefaultValue="https://mreinhart.github.io/Outlook/commands.html" />
+					<bt:Url id="Taskpane.Url" DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html" />
+					<bt:Url id="Commands.Url.Mobile" DefaultValue="https://mreinhart.github.io/Outlook/commands.html" />
+					<bt:Url id="Taskpane.Url.Mobile" DefaultValue="https://mreinhart.github.io/Outlook/taskpane.html" />
 				</bt:Urls>
 				<bt:ShortStrings>
 					<bt:String id="GroupLabelMobile" DefaultValue="Phishing"/>
